@@ -1,4 +1,4 @@
-// import {axios} from "axios";
+// import { axios } from "./node_modules/axios";
 
 function API(){
     
@@ -30,18 +30,24 @@ function API(){
     // axios.get("https://pokeapi.co/api/v2/pokemon/ditto").then(function(res){
     //     console.log(res);
     // });
-    axios.defaults.headers.common['Access-Control-Allow-Origin'] = 'https://drag49487jr.github.io/';
-    axios.post('https://flow.zoho.com/740372226/flow/webhook/incoming?zapikey=1001.31fdb9777de60c19b4a55ec7441aff70.78ea5e1074ad30766f4d6b5edff5849b&isdebug=false', {
-        name: 'John Doe',
-        email: 'johndoe@example.com'
-      })
+    // axios.defaults.headers.post['Access-Control-Allow-Origin'] = 'https://drag49487jr.github.io/';
+    let config = {
+        data : {
+            "name" : "test"
+        },
+    }
+    let headers = {
+        headers : {
+            "Access-Control-Allow-Origin" : "*"
+        }
+    }
+    axios.post('https://flow.zoho.com/740372226/flow/webhook/incoming?zapikey=1001.31fdb9777de60c19b4a55ec7441aff70.78ea5e1074ad30766f4d6b5edff5849b&isdebug=false',config,headers)
       .then(response => {
         console.log(response.data);
       })
       .catch(error => {
         console.log(error);
     });
-    // console.log("HEllo");
 }
 API();
 
