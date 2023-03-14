@@ -32,9 +32,9 @@ function API(){
     // });
     // axios.defaults.headers.post['Access-Control-Allow-Origin'] = 'https://drag49487jr.github.io/';
     let config = {
-        data : {
+       
             "name" : "test"
-        },
+ 
     }
     let headers = {
         headers : {
