@@ -3,7 +3,6 @@
 function API(){
     
     console.log("Hello");
-    <iframe height='500px' width='100%' frameborder='0' allowTransparency='true' scrolling='auto' src='https://creatorapp.zohopublic.com/rimrockts/ozontel/form-embed/Entry_Form/wJamb8DgeAnRXDXmZR9NQ67UJyRyUXHHmTxVOM7QOgKM6SrYXUX9xktFCtu2C6xDTuMCDGrmqsAUuhXxUF10N2B6mHw8d85mvPfV'></iframe>
     // function startTimer(duration, display) {
     //     var timer = duration, minutes, seconds;
     //     setInterval(function () {
